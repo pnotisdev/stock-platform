@@ -11,6 +11,9 @@ module.exports = {
         1:"1px",
       },
     },
+    fontFamily:{
+      quicksand: ["Quicksand", "sans-serif"],
+    }
   },
   plugins: [],
 }
