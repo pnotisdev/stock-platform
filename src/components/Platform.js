@@ -1,7 +1,8 @@
 import React from 'react'
 import Card from './Card';
-import { mockCompanyProfile } from '../constants/mock'
-import Header from './Header'
+import { mockCompanyProfile } from '../constants/mock';
+import Header from './Header';
+import Details from './Details';
 
 const Platform = () => {
   return (
@@ -9,7 +10,7 @@ const Platform = () => {
         <div className="col-span-1 md:col-span-2 xl:col-span-3 row-span-1 flex justify-start items-center"><Header name={mockCompanyProfile.name} /></div>
         <div className="md:col-span-2 row-span-4"><Card>Chart</Card></div>
         <div><Card>Overview</Card></div>
-        <div className="row-span-2 xl:row-span-3"><Card>Details</Card></div>
+        <div className="row-span-2 xl:row-span-3"><Details details={mockCompanyProfile} /> </div>
     </div>
   )
 }
